@@ -44,7 +44,7 @@ Distribusi target pada data awal:
 
 Beberapa variabel numerik memiliki distribusi menceng ke kanan. `Monthly_Inhand_Salary`, misalnya, memiliki 7.514 missing values pada data awal dan diimputasi menggunakan median.
 
-![Distribusi Monthly Inhand Salary](assets/salary-distribution.png)
+<img width="582" height="454" alt="Screenshot 2026-09-29 at 15 08 21" src="https://github.com/user-attachments/assets/ec64a547-1f14-459e-935f-b02be5a61816" />
 
 Seleksi fitur pada notebook menghapus delapan variabel numerik dengan korelasi linear yang kecil dan menghapus `Occupation`. Ini merupakan keputusan eksploratif; korelasi linear kecil tidak membuktikan sebuah fitur tidak berguna bagi model berbasis pohon.
 
@@ -143,7 +143,7 @@ Lima fitur teratas berdasarkan `feature_importances_` dari XGBoost:
 | Delay_from_due_date | 0,0426 |
 | Payment_Behaviour_Low_spent_Small_value_payments | 0,0373 |
 
-![Top 10 feature importance XGBoost](assets/feature-importance.png)
+<img width="787" height="479" alt="Screenshot 2026-09-29 at 15 08 51" src="https://github.com/user-attachments/assets/e9b73d2c-ac03-459a-b812-083071fce53b" />
 
 `Credit_Mix` memiliki importance tertinggi dalam model ini, diikuti perilaku pembayaran minimum dan utang yang belum dilunasi. Nilai ini merupakan ukuran importance internal model, bukan besarnya pengaruh kausal, arah hubungan, atau persentase perubahan skor kredit.
 
